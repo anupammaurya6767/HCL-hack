@@ -150,18 +150,3 @@ The project requires two CSV files: `banks.csv` and `links.csv`.
     *   `/api/cheapestroute`: Returns the cheapest route between two banks.
 5.  **Server Start**: Start the Express server on port 3000.
 
-## Assumptions and Limitations
-
-*   The CSV files are assumed to be in the correct format.
-*   The graph is assumed to be directed, based on the `links.csv` data.
-*   Negative charges or transfer times are not supported.
-*   Error handling is basic, and more comprehensive error checking could be added.
-
-## Future Enhancements
-
-*   Implement more robust error handling and validation.
-*   Add support for a persistent database (e.g., PostgreSQL).
-*   Implement a caching mechanism to store frequently accessed routes.
-*   Add unit tests.
-*   Implement authentication and authorization for the API endpoints.
-*   Dockerize the application for easier deployment.
