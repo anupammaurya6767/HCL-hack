@@ -3,8 +3,10 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const Heap = require('heap');
 const sqlite3 = require('sqlite3').verbose();
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
